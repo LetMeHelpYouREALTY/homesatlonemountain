@@ -12,6 +12,30 @@ interface BlogPostPageProps {
   }
 }
 
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const post = allPosts.find((p) => p._raw.flattenedPath === params.slug)
+  if (!post) return {}
+  return {
+    title: post.title,
+    description: post.description ?? post.title,
+    openGraph: {
+      title: post.title,
+      description: post.description ?? post.title,
+      url: post.url,
+      type: 'article',
+      publishedTime: post.published,
+      authors: [post.author],
+      images: post.image ? [{ url: post.image, width: 1200, height: 630, alt: post.title }] : [{ url: '/og-image.jpg' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description ?? post.title,
+      images: post.image ? [post.image] : ['/og-image.jpg'],
+    },
+  }
+}
+
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = allPosts.find((p) => p._raw.flattenedPath === params.slug)
 

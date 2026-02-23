@@ -6,9 +6,20 @@ import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
 import { Phone, CheckCircle } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
-  title: 'Lone Mountain Home Valuation | Free Property Value Estimate | Dr. Jan Duffy',
+  title: 'Lone Mountain Home Valuation',
   description: 'Get a free Lone Mountain home valuation. What is your Lone Mountain home worth? Dr. Jan Duffy provides accurate CMA for Northwest Las Vegas. Call 702-222-1964.',
   keywords: ['Lone Mountain home valuation', 'Lone Mountain home value', 'what is my Lone Mountain home worth', 'free Lone Mountain CMA'],
+  openGraph: {
+    title: 'Lone Mountain Home Valuation | Dr. Jan Duffy',
+    description: 'Get a free Lone Mountain home valuation. Dr. Jan Duffy provides accurate CMAs using current MLS data and local expertise. Call 702-222-1964.',
+    url: 'https://www.homesatlonemountain.com/home-valuation',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lone Mountain Home Valuation | Dr. Jan Duffy',
+    description: 'Get a free, accurate Lone Mountain home valuation from Dr. Jan Duffy. Call 702-222-1964.',
+  },
 }
 
 const faqs = [

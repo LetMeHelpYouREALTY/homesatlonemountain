@@ -19,10 +19,10 @@ const aboutFaqs = [
 
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy | Homes at Lone Mountain',
-  description: 'Learn about Dr. Jan Duffy, your trusted Lone Mountain real estate expert. Discover her experience, local knowledge, and commitment to helping you buy or sell your home.',
+  description: 'Meet Dr. Jan Duffy, your trusted Lone Mountain real estate expert. 30+ years of Northwest Las Vegas experience helping buyers and sellers achieve their real estate goals.',
   openGraph: {
     title: 'About Dr. Jan Duffy | Homes at Lone Mountain',
-    description: 'Learn about Dr. Jan Duffy, your trusted Lone Mountain real estate expert. Discover her experience, local knowledge, and commitment to helping you buy or sell your home.',
+    description: 'Meet Dr. Jan Duffy, your trusted Lone Mountain real estate expert. 30+ years of Northwest Las Vegas experience helping buyers and sellers achieve their real estate goals.',
     url: 'https://www.homesatlonemountain.com/about',
     type: 'profile',
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Dr. Jan Duffy | Homes at Lone Mountain',
-    description: 'Learn about Dr. Jan Duffy, your trusted Lone Mountain real estate expert. Discover her experience, local knowledge, and commitment to helping you buy or sell your home.',
+    description: 'Meet Dr. Jan Duffy, your trusted Lone Mountain real estate expert. 30+ years of Northwest Las Vegas experience helping buyers and sellers achieve their real estate goals.',
     images: [`https://www.homesatlonemountain.com${assetPaths.agentPhoto}`]
   }
 }

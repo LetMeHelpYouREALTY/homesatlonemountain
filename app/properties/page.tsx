@@ -10,8 +10,19 @@ export const dynamic = 'force-static'
 export const revalidate = 3600 // Rebuild every hour
 
 export const metadata: Metadata = {
-  title: 'Lone Mountain Homes for Sale | Properties | Homes at Lone Mountain',
+  title: 'Lone Mountain Properties for Sale',
   description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Find your dream property with Dr. Jan Duffy\'s expert guidance and local knowledge. Updated daily listings. Call 702-222-1964.',
+  openGraph: {
+    title: 'Lone Mountain Properties for Sale | Dr. Jan Duffy',
+    description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Updated daily MLS listings with expert guidance from Dr. Jan Duffy.',
+    url: 'https://www.homesatlonemountain.com/properties',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lone Mountain Properties for Sale',
+    description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Updated daily listings. Expert guidance from Dr. Jan Duffy.',
+  },
 }
 
 const FeatureSection = dynamicImport(() => import('@/components/layout/FeatureSection').then(mod => mod.FeatureSection), { ssr: false })

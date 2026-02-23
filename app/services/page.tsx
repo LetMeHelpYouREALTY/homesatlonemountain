@@ -25,7 +25,7 @@ const servicesFaq = [
 
 export const metadata: Metadata = {
   title: 'Real Estate Services | Lone Mountain Buyers & Sellers | Dr. Jan Duffy',
-  description: 'Expert real estate services in Lone Mountain: home valuations, buyer representation, seller representation, market analysis. Dr. Jan Duffy, 30+ years Las Vegas experience. Call 702-222-1964.',
+  description: 'Expert Lone Mountain real estate services: home valuations, buyer & seller representation, market analysis. Dr. Jan Duffy, 30+ years Las Vegas experience. Call 702-222-1964.',
   openGraph: {
     title: 'Real Estate Services | Lone Mountain | Dr. Jan Duffy',
     description: 'Expert real estate services in Lone Mountain: valuations, buyer & seller representation, market analysis. 30+ years experience.',

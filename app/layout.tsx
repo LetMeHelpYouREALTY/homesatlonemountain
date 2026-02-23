@@ -19,14 +19,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.homesatlonemoun
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
+    default: 'Homes at Lone Mountain | Dr. Jan Duffy, REALTOR®',
     template: '%s | Lone Mountain Las Vegas'
   },
   description: 'Search Lone Mountain homes for sale in Las Vegas. Get expert guidance from Dr. Jan Duffy, 30+ years local experience. Updated daily listings, market reports, neighborhood insights.',
   keywords: ['Lone Mountain homes for sale', 'Lone Mountain Las Vegas', 'Las Vegas real estate', 'homes near Lone Mountain', 'Northwest Las Vegas homes', 'Lone Mountain real estate agent', 'Dr. Jan Duffy realtor'],
   authors: [{ name: 'Dr. Jan Duffy', url: siteUrl }],
   openGraph: {
-    title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
+    title: 'Homes at Lone Mountain | Dr. Jan Duffy, REALTOR®',
     description: 'Search Lone Mountain homes for sale in Las Vegas. Get expert guidance from Dr. Jan Duffy, 30+ years local experience. Updated daily listings, market reports, neighborhood insights.',
     url: '/',
     siteName: 'Homes at Lone Mountain',
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
+    title: 'Homes at Lone Mountain | Dr. Jan Duffy, REALTOR®',
     description: 'Search Lone Mountain homes for sale in Las Vegas. Get expert guidance from Dr. Jan Duffy, 30+ years local experience.',
-    images: ['/og-image.jpg'] // Use same image as Open Graph for consistency
+    images: ['/og-image.jpg']
   },
   alternates: {
     canonical: './', // Resolves to current route (metadataBase + path) per page

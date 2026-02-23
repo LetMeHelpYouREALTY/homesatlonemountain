@@ -14,7 +14,7 @@ export function useMDXComponents(components: MDXComponents = {}): MDXComponents 
       return (
         <Image
           src={src}
-          alt={alt || ''}
+          alt={alt || 'Blog post image'}
           width={800}
           height={400}
           className={className}

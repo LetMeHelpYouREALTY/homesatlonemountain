@@ -7,9 +7,20 @@ import { generateBreadcrumbSchema } from '@/lib/schema'
 import { Phone, CheckCircle, TrendingUp } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
-  title: 'Sell Your Lone Mountain Home | Lone Mountain Seller Guide | Dr. Jan Duffy',
+  title: 'Sell Your Lone Mountain Home',
   description: 'Sell your Lone Mountain home with Dr. Jan Duffy. Maximize your Lone Mountain sale price. 30+ years Northwest Las Vegas experience. Free valuation. Call 702-222-1964.',
   keywords: ['sell Lone Mountain home', 'Lone Mountain home seller', 'Lone Mountain real estate seller', 'sell house Lone Mountain'],
+  openGraph: {
+    title: 'Sell Your Lone Mountain Home | Dr. Jan Duffy',
+    description: 'Sell your Lone Mountain home and maximize your sale price. 30+ years Northwest Las Vegas experience. Free home valuation. Call 702-222-1964.',
+    url: 'https://www.homesatlonemountain.com/sellers',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sell Your Lone Mountain Home | Dr. Jan Duffy',
+    description: 'Maximize your Lone Mountain home sale price with Dr. Jan Duffy. Free valuation. 30+ years experience.',
+  },
 }
 
 export default function SellersPage() {

@@ -7,9 +7,20 @@ import { assetPaths } from '@/lib/site-config'
 import { Phone, Search, Home, Key, CheckCircle } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
-  title: 'Buy a Home in Lone Mountain | Lone Mountain Buyer Guide | Dr. Jan Duffy',
+  title: 'Buy a Home in Lone Mountain',
   description: 'Buy a home in Lone Mountain, Northwest Las Vegas. Dr. Jan Duffy guides Lone Mountain buyers through every step. Free consultation. Call 702-222-1964.',
   keywords: ['buy Lone Mountain home', 'Lone Mountain home buyer', 'homes for sale Lone Mountain', 'Lone Mountain real estate buyer'],
+  openGraph: {
+    title: 'Buy a Home in Lone Mountain | Dr. Jan Duffy',
+    description: 'Buy a home in Lone Mountain, Northwest Las Vegas. Expert buyer guidance from Dr. Jan Duffy, 30+ years experience. Free consultation.',
+    url: 'https://www.homesatlonemountain.com/buyers',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Buy a Home in Lone Mountain | Dr. Jan Duffy',
+    description: 'Expert Lone Mountain buyer guidance from Dr. Jan Duffy. Free consultation. Call 702-222-1964.',
+  },
 }
 
 const steps = [

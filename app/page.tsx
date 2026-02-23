@@ -13,7 +13,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
+  title: { absolute: 'Lone Mountain Homes for Sale | Dr. Jan Duffy' },
   description:
     'Lone Mountain homes for sale. Expert Lone Mountain real estate with Dr. Jan Duffy. 30+ years Northwest Las Vegas experience. Buy or sell Lone Mountain homes. Call 702-222-1964.',
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'Dr. Jan Duffy Lone Mountain',
   ],
   openGraph: {
-    title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
+    title: 'Lone Mountain Homes for Sale | Dr. Jan Duffy',
     description: 'Lone Mountain homes for sale. Expert real estate with Dr. Jan Duffy. 30+ years experience. Buy or sell in Lone Mountain.',
     url: '/',
   },
