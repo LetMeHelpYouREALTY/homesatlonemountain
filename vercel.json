@@ -27,6 +27,11 @@
       "source": "/properties/properties/:path*",
       "destination": "/properties/:path*",
       "permanent": true
+    },
+    {
+      "source": "/lone-mountain-ranch-homes",
+      "destination": "/neighborhood",
+      "permanent": true
     }
   ]
 }

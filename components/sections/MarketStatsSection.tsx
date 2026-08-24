@@ -18,8 +18,13 @@ export function MarketStatsSection() {
             <div className="text-4xl md:text-5xl font-bold text-luxury-gold mb-2">
               {loneMountainStats.medianPriceFormatted}
             </div>
-            <div className="text-white/80 text-sm">Lone Mountain Median Price</div>
-            <div className="text-luxury-green text-sm">{loneMountainStats.yearOverYearChange} YoY</div>
+            <div className="text-white/80 text-sm">Lone Mountain Median List</div>
+            {loneMountainStats.medianNote ? (
+              <div className="mt-1 text-xs text-white/70">{loneMountainStats.medianNote}</div>
+            ) : null}
+            {loneMountainStats.yearOverYearChange ? (
+              <div className="text-luxury-green text-sm">{loneMountainStats.yearOverYearChange} YoY</div>
+            ) : null}
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-luxury-gold mb-2">
