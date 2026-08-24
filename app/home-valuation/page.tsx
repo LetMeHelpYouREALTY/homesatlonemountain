@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { HomebeatForm } from '@/components/forms/HomebeatForm'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
@@ -49,24 +50,25 @@ export default function HomeValuationPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
           <div className="bg-luxury-cream rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-luxury-navy mb-4">Get Your Free Lone Mountain Valuation</h2>
+            <h2 className="text-2xl font-bold text-luxury-navy mb-4">Get Your Free Lone Mountain Homebeat</h2>
             <p className="text-luxury-charcoal mb-6">
-              Call Dr. Jan Duffy at 702-222-1964 for a comprehensive Lone Mountain market analysis. Provide your address and property details—receive an accurate price range within 24-48 hours.
+              Enter your address. Cloud CMA emails a branded Lone Mountain market snapshot, then updates it on your schedule. Call 702-222-1964 if you want a full CMA instead.
             </p>
             <div className="space-y-3 mb-8">
-              {['Lone Mountain comparable sales analysis', 'Current market conditions', 'Feature-by-feature adjustments', 'Strategic pricing recommendations', 'No obligation'].map((item) => (
+              {['Lone Mountain comparable sales', 'Current listing and sold activity', 'Emailed on the schedule you choose', 'No obligation'].map((item) => (
                 <div key={item} className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-luxury-green flex-shrink-0" />
                   <span className="text-luxury-navy">{item}</span>
                 </div>
               ))}
             </div>
+            <HomebeatForm />
             <a
               href="tel:+17022221964"
-              className="inline-flex items-center gap-2 bg-luxury-gold text-luxury-navy px-6 py-3 rounded-lg font-bold hover:bg-luxury-gold-light transition-colors"
+              className="mt-6 inline-flex items-center gap-2 text-luxury-navy font-semibold hover:text-luxury-gold"
             >
               <Phone className="h-5 w-5" />
-              Call 702-222-1964
+              Or call 702-222-1964
             </a>
           </div>
 
