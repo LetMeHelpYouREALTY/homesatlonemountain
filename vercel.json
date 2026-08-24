@@ -1,6 +1,13 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
+  "git": {
+    "deploymentEnabled": false
+  },
+  "ignoreCommand": "exit 0",
   "headers": [
     {
       "source": "/static/:path*",
@@ -26,4 +33,4 @@
       "permanent": true
     }
   ]
-} 
+}
