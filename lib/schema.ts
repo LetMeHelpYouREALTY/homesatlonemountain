@@ -202,7 +202,7 @@ export function generateOrganizationSchema() {
       '@type': 'Place',
       name: 'Lone Mountain, Las Vegas, Nevada'
     },
-    priceRange: '$400,000 - $2,000,000',
+    priceRange: '$229,000 - $3,800,000+',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Real Estate Services',

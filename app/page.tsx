@@ -9,6 +9,7 @@ import { CTASection } from '@/components/sections/CTASection'
 import { CalendlyWidget } from '@/components/calendly/CalendlyWidget'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateFaqSchema } from '@/lib/schema'
+import { loneMountainHighlights } from '@/lib/site-config'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -51,14 +52,13 @@ export default function Home() {
                 Why Choose Lone Mountain for Your Next Home?
               </h2>
               <p className="text-lg text-luxury-charcoal leading-relaxed">
-                Lone Mountain is one of Northwest Las Vegas&apos;s most sought-after neighborhoods—mountain views, spacious homes, 
-                top-rated schools, and a strong sense of community. Dr. Jan Duffy has helped hundreds of families find their 
-                perfect Lone Mountain home.
+                Lone Mountain in ZIP 89129 wraps around the peak with ranch homes, Rural Neighborhood Preservation lots,
+                and custom estates. Dr. Jan Duffy has closed 500+ transactions across Northwest Las Vegas.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {['Mountain views', 'Spacious single-family homes', 'Top-rated schools', 'Family-friendly community', 'Easy Summerlin access', 'Strong resale value'].map((item) => (
+              {loneMountainHighlights.map((item) => (
                 <div key={item} className="flex items-center gap-3 p-4 rounded-lg bg-luxury-cream">
                   <span className="text-luxury-gold text-xl">✓</span>
                   <span className="font-medium text-luxury-navy">{item}</span>
@@ -86,8 +86,8 @@ export default function Home() {
                 href="/neighborhood"
                 className="block p-6 rounded-lg bg-luxury-cream hover:bg-luxury-stone/50 transition-colors text-center"
               >
-                <h3 className="font-bold text-luxury-navy text-lg">Lone Mountain</h3>
-                <p className="text-sm text-luxury-charcoal mt-1">Neighborhood guide, schools, amenities</p>
+                <h3 className="font-bold text-luxury-navy text-lg">Lone Mountain ranch homes</h3>
+                <p className="text-sm text-luxury-charcoal mt-1">89129 RNP lots, The Estates, The Legends</p>
               </Link>
               <Link
                 href="/properties"
@@ -120,7 +120,7 @@ export default function Home() {
                   Ready to Find Your Mountain Retreat?
                 </h2>
                 <p className="text-lg text-luxury-charcoal leading-relaxed mb-6">
-                  Explore homes for sale in Lone Mountain and the Northwest Las Vegas area. From mountain-view estates to family-friendly neighborhoods, Dr. Jan Duffy can help you find the perfect fit.
+                  Explore homes for sale in Lone Mountain and Northwest Las Vegas. From mountain-view estates to ranch floor plans and gated condos, Dr. Jan Duffy can match the right 89129 pocket.
                 </p>
                 <ul className="space-y-3 text-luxury-charcoal">
                   <li className="flex items-center gap-2">
@@ -147,7 +147,7 @@ export default function Home() {
         <CTASection />
 
         <div className="bg-luxury-cream py-4 text-center text-sm text-luxury-charcoal">
-          Last Updated: January 2026 | Homes at Lone Mountain | Lone Mountain Real Estate | Dr. Jan Duffy
+          Last Updated: August 2026 | Homes at Lone Mountain | Lone Mountain Real Estate | Dr. Jan Duffy
         </div>
       </main>
     </>

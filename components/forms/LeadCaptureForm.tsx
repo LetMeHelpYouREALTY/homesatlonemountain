@@ -9,6 +9,8 @@ interface LeadCaptureFormProps {
   title?: string
   buttonText?: string
   showAddress?: boolean
+  showMessage?: boolean
+  messagePlaceholder?: string
   source?: string
   onSuccess?: () => void
 }
@@ -18,6 +20,8 @@ export function LeadCaptureForm({
   title = 'Get Started',
   buttonText = 'Submit',
   showAddress = false,
+  showMessage = false,
+  messagePlaceholder = 'How can we help?',
   source = 'website',
   onSuccess,
 }: LeadCaptureFormProps) {
@@ -151,6 +155,19 @@ export function LeadCaptureForm({
             <p className="text-sm text-red-600">{getFieldError('propertyAddress')}</p>
           )}
         </>
+      )}
+
+      {showMessage && (
+        <textarea
+          id="lead-message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder={messagePlaceholder}
+          rows={4}
+          aria-label="Search criteria"
+          className="w-full rounded-lg border border-luxury-stone px-4 py-2 focus:border-luxury-gold focus:ring-2 focus:ring-luxury-gold"
+        />
       )}
 
       <Button

@@ -2,7 +2,7 @@ export const loneMountainFaqs = [
   {
     question: 'What is Lone Mountain and where is it located?',
     answer:
-      'Lone Mountain is a premier Northwest Las Vegas neighborhood known for mountain views, spacious homes, and family-friendly living. It offers easy access to Summerlin, top-rated schools, and convenient shopping and dining.',
+      'Lone Mountain is a Northwest Las Vegas neighborhood in ZIP 89129, wrapped around Lone Mountain peak. Homes include ranch floor plans, RNP acreage, gated condos at The Legends, and custom estates. The 215 Beltway and U.S. 95 put Downtown Summerlin a short drive south.',
   },
   {
     question: 'How do I find Lone Mountain homes for sale?',
@@ -12,7 +12,7 @@ export const loneMountainFaqs = [
   {
     question: 'What are Lone Mountain home prices like?',
     answer:
-      'Lone Mountain homes typically range from approximately $400,000 to over $2 million, depending on size, age, and amenities. The median price is around $550,000. Contact Dr. Jan Duffy for current Lone Mountain market data and a free home valuation.',
+      'June 2026 Las Vegas REALTORS MLS data for ZIPs 89129, 89131, and 89149 showed a $455,000 median list price. Condos often list from the low $200,000s; detached homes commonly list from about $450,000 to $900,000; 2026 custom estate sales have reached $1.1 million to $3.8 million-plus. Call Dr. Jan Duffy at 702-222-1964 for a current CMA.',
   },
   {
     question: 'Why choose Dr. Jan Duffy for Lone Mountain real estate?',

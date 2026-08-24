@@ -35,12 +35,13 @@ export const officeInfo = {
 };
 
 export const loneMountainStats = {
-  medianPrice: 550000,
-  medianPriceFormatted: '$550,000',
-  priceRange: '$400,000 - $2,000,000',
-  daysOnMarket: 35,
-  yearOverYearChange: '+4.5%',
-  lastUpdated: 'January 2026',
+  medianPrice: 455000,
+  medianPriceFormatted: '$455,000',
+  priceRange: '$229,000 - $3,800,000+',
+  daysOnMarket: 23,
+  yearOverYearChange: '',
+  lastUpdated: 'August 2026',
+  medianNote: 'June 2026 Las Vegas REALTORS MLS median list for ZIPs 89129, 89131, and 89149',
 };
 
 export const agentStats = {
@@ -65,12 +66,12 @@ export const assetPaths = {
 };
 
 export const loneMountainHighlights = [
-  'Mountain views',
-  'Spacious homes',
-  'Top-rated schools',
-  'Family-friendly',
-  'Northwest Las Vegas',
-  'Easy access to Summerlin',
+  'Lone Mountain peak views',
+  'Ranch homes and custom estates',
+  'Rural Neighborhood Preservation lots',
+  'ZIP 89129 Northwest Las Vegas',
+  '215 Beltway and U.S. 95 access',
+  'Trails at Lone Mountain Regional Park',
 ];
 
 // Lone Mountain–focused services
