@@ -26,7 +26,7 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
   {
     name: 'Skyridge Park',
     category: 'parks',
-    address: '8200 Skyridge Ave, Las Vegas, NV 89129',
+    address: '10500 Stange Ave, Las Vegas, NV 89129',
     schemaType: 'Park',
   },
   {
