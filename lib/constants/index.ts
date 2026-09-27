@@ -17,7 +17,7 @@ export const REALSCOUT_AGENT_ID = 'UA-1136617'
 export const REALSCOUT_SCRIPT_URL = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
 
 // Google Maps
-export const DEFAULT_MAP_CENTER = { lat: 36.2455, lng: -115.2541 }
+export const DEFAULT_MAP_CENTER = { lat: 36.247787, lng: -115.32163 }
 export const DEFAULT_MAP_ZOOM = 13
 
 // Social Media

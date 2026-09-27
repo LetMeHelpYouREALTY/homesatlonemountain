@@ -1,3 +1,6 @@
+import { LONE_MOUNTAIN_COMMUNITY } from '@/lib/lone-mountain-map'
+import { CURATED_AMENITIES } from '@/lib/lone-mountain-amenities-data'
+
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.homesatlonemountain.com'
 
 // Logo path - matches public folder
@@ -256,6 +259,76 @@ export function generateFaqSchema(faqs: { question: string; answer: string }[]) 
       acceptedAnswer: {
         '@type': 'Answer',
         text: answer,
+      },
+    })),
+  }
+}
+
+export function generateCommunityPlaceSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    '@id': `${baseUrl}/amenities#community`,
+    name: LONE_MOUNTAIN_COMMUNITY.fullName,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: LONE_MOUNTAIN_COMMUNITY.centerAddress.split(',')[0],
+      addressLocality: LONE_MOUNTAIN_COMMUNITY.city,
+      addressRegion: LONE_MOUNTAIN_COMMUNITY.state,
+      postalCode: LONE_MOUNTAIN_COMMUNITY.zip,
+      addressCountry: 'US',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: LONE_MOUNTAIN_COMMUNITY.center.lat,
+      longitude: LONE_MOUNTAIN_COMMUNITY.center.lng,
+    },
+  }
+}
+
+export function generateDrJanDuffyAgentSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RealEstateAgent',
+    '@id': `${baseUrl}/#agent`,
+    name: 'Dr. Jan Duffy',
+    jobTitle: 'REALTOR®',
+    telephone: '+1-702-222-1964',
+    email: 'info@homesatlonemountain.com',
+    url: `${baseUrl}/about`,
+    worksFor: {
+      '@id': `${baseUrl}/#organization`,
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: LONE_MOUNTAIN_COMMUNITY.fullName,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: LONE_MOUNTAIN_COMMUNITY.center.lat,
+        longitude: LONE_MOUNTAIN_COMMUNITY.center.lng,
+      },
+    },
+  }
+}
+
+export function generateAmenitiesItemListSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `Featured places near ${LONE_MOUNTAIN_COMMUNITY.name}`,
+    itemListElement: CURATED_AMENITIES.map((place, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': place.schemaType,
+        name: place.name,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: place.address.split(',')[0],
+          addressLocality: LONE_MOUNTAIN_COMMUNITY.city,
+          addressRegion: LONE_MOUNTAIN_COMMUNITY.state,
+          addressCountry: 'US',
+        },
       },
     })),
   }

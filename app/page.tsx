@@ -6,6 +6,7 @@ import { ReviewsSection } from '@/components/sections/ReviewsSection'
 import { FAQSection } from '@/components/sections/FAQSection'
 import { loneMountainFaqs } from '@/lib/lone-mountain-faqs'
 import { CTASection } from '@/components/sections/CTASection'
+import { NearbyAmenitiesSection } from '@/components/sections/NearbyAmenitiesSection'
 import { CalendlyWidget } from '@/components/calendly/CalendlyWidget'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateFaqSchema } from '@/lib/schema'
@@ -70,6 +71,8 @@ export default function Home() {
 
         <MarketStatsSection />
 
+        <NearbyAmenitiesSection />
+
         {/* Lone Mountain Neighborhood Links */}
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -88,6 +91,13 @@ export default function Home() {
               >
                 <h3 className="font-bold text-luxury-navy text-lg">Lone Mountain</h3>
                 <p className="text-sm text-luxury-charcoal mt-1">Neighborhood guide, schools, amenities</p>
+              </Link>
+              <Link
+                href="/amenities"
+                className="block p-6 rounded-lg bg-luxury-cream hover:bg-luxury-stone/50 transition-colors text-center"
+              >
+                <h3 className="font-bold text-luxury-navy text-lg">Nearby Amenities</h3>
+                <p className="text-sm text-luxury-charcoal mt-1">Map of dining, parks, grocery &amp; more</p>
               </Link>
               <Link
                 href="/properties"

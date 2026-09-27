@@ -4,6 +4,7 @@ import dynamicImport from 'next/dynamic'
 import { PropertiesList } from '@/components/properties/PropertiesList'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { NearbyAmenitiesSection } from '@/components/sections/NearbyAmenitiesSection'
 
 // Force static generation for SEO
 export const dynamic = 'force-static'
@@ -64,6 +65,12 @@ export default function PropertiesPage() {
         </div>
 
         <PropertiesList />
+
+        <NearbyAmenitiesSection
+          title="What's Near Your Next Lone Mountain Home"
+          description="Compare listings with nearby grocery, parks, schools, and healthcare on the interactive map."
+          compact
+        />
 
         <FeatureSection variant="alt1" ctaText="See All Lone Mountain Listings!" ctaButtonText="Browse All Homes" ctaIconUrl="/icons/house.svg" />
       </div>
