@@ -20,6 +20,7 @@ export function Header() {
     { href: '/', label: 'Home' },
     { href: '/properties', label: 'Lone Mountain Listings' },
     { href: '/neighborhood', label: 'Lone Mountain Neighborhood' },
+    { href: '/amenities', label: 'Nearby Amenities' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ]

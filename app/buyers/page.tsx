@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateBreadcrumbSchema } from '@/lib/schema'
+import { NearbyAmenitiesSection } from '@/components/sections/NearbyAmenitiesSection'
 import { assetPaths } from '@/lib/site-config'
 import { Phone, Search, Home, Key, CheckCircle } from '@/components/ui/Icons'
 
@@ -90,6 +91,12 @@ export default function BuyersPage() {
             </a>
           </div>
         </div>
+
+        <NearbyAmenitiesSection
+          title="Explore Lone Mountain Amenities Before You Buy"
+          description="Filter restaurants, parks, grocery, healthcare, and schools around Lone Mountain while you shop for homes."
+          compact
+        />
 
         <section className="py-12 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-luxury-navy mb-6 text-center">Lone Mountain Homes for Sale</h2>

@@ -6,6 +6,7 @@ import { Phone, Mail, MapPin } from '@/components/ui/Icons'
 const quickLinks = [
   { name: 'Lone Mountain Listings', href: '/properties' },
   { name: 'Neighborhood', href: '/neighborhood' },
+  { name: 'Nearby Amenities', href: '/amenities' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
   { name: 'FAQ', href: '/faq' },

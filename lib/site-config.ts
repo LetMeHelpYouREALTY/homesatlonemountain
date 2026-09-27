@@ -80,5 +80,6 @@ export const services = [
   { name: 'Sell Your Lone Mountain Home', slug: 'sellers', description: 'Maximize your sale price' },
   { name: 'Lone Mountain Home Valuation', slug: 'home-valuation', description: 'Free property valuation' },
   { name: 'Lone Mountain Neighborhood Guide', slug: 'neighborhood', description: 'Schools, amenities, lifestyle' },
+  { name: 'Nearby Amenities', slug: 'amenities', description: 'Interactive map of local dining, parks, and services' },
   { name: 'Market Updates', slug: 'blog', description: 'Lone Mountain market insights' },
 ];

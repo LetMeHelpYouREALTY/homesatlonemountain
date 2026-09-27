@@ -4,6 +4,7 @@ import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
 import Link from 'next/link'
+import { NearbyAmenitiesSection } from '@/components/sections/NearbyAmenitiesSection'
 
 export const dynamic = 'force-static'
 export const revalidate = 3600
@@ -69,6 +70,11 @@ export default function NeighborhoodPage() {
               <li>• Easy access to Summerlin and Downtown</li>
               <li>• Mountain views and hiking opportunities</li>
             </ul>
+            <p className="mt-4">
+              <Link href="/amenities" className="text-luxury-gold font-semibold hover:underline">
+                Explore the interactive Nearby Amenities map →
+              </Link>
+            </p>
           </section>
 
           <section>
@@ -91,6 +97,11 @@ export default function NeighborhoodPage() {
           </p>
         </div>
       </div>
+
+      <NearbyAmenitiesSection
+        title="What's Nearby in Lone Mountain"
+        compact
+      />
 
       <section className="mt-16 py-12 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-luxury-navy mb-6 text-center">Homes for Sale in Lone Mountain</h2>
