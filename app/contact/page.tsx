@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { CalendlyWidget } from '@/components/calendly/CalendlyWidget'
-import { generateFaqSchema } from '@/lib/schema'
+import { generateBreadcrumbSchema, generateFaqSchema } from '@/lib/schema'
 import { agentInfo, officeInfo, assetPaths } from '@/lib/site-config'
 
 // Force static generation for SEO
@@ -47,27 +47,21 @@ export default function ContactPage() {
   return (
     <>
       <SchemaMarkup schema={generateFaqSchema(contactFaqs)} />
-      <SchemaMarkup schema={{
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "mainEntity": {
-          "@type": "RealEstateAgent",
-          "name": "Dr. Jan Duffy",
-          "areaServed": "Lone Mountain, Las Vegas",
-          "url": "https://www.homesatlonemountain.com/contact",
-          "image": assetPaths.agentPhotoUrl,
-          "telephone": "+1-702-222-1964",
-          "email": agentInfo.email,
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": officeInfo.address.street,
-            "addressLocality": officeInfo.address.city,
-            "addressRegion": officeInfo.address.state,
-            "postalCode": officeInfo.address.zip,
-            "addressCountry": "US"
-          }
-        }
-      }} />
+      <SchemaMarkup
+        schema={generateBreadcrumbSchema([
+          { name: 'Home', url: '/' },
+          { name: 'Contact', url: '/contact' },
+        ])}
+      />
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          mainEntity: {
+            '@id': 'https://www.homesatlonemountain.com/#agent',
+          },
+        }}
+      />
       <div className="py-16">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center mb-16">
