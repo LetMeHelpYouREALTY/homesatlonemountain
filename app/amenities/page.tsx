@@ -55,7 +55,7 @@ export default function AmenitiesPage() {
             Nearby Amenities in {LONE_MOUNTAIN_COMMUNITY.name}, Las Vegas
           </h1>
           <p className="mt-6 text-lg text-luxury-charcoal leading-relaxed">
-            Lone Mountain sits in Northwest Las Vegas with mountain views, family neighborhoods, and quick access to
+            Lone Mountain sits in Northwest Las Vegas with mountain views, established residential blocks, and quick access to
             Summerlin, US-95, and the Las Vegas Beltway. Use the interactive map below to explore dining, parks,
             grocery, healthcare, and schools—or read the hyperlocal summaries for buyers comparing blocks in{' '}
             {LONE_MOUNTAIN_COMMUNITY.zip} and surrounding zip codes.
@@ -87,7 +87,7 @@ export default function AmenitiesPage() {
             <p className="mt-4">
               <strong>Lone Mountain Regional Park</strong> (9825 W Lone Mountain Rd) is the anchor Clark County park with
               trails, sports fields, and picnic pavilions. <strong>Majestic Park</strong> (3997 N Hualapai Way) and{' '}
-              <strong>Skyridge Park</strong> (10500 Stange Ave) add playgrounds and open space for families in the
+              <strong>Skyridge Park</strong> (10500 Stange Ave) add playgrounds and open space for residents in the
               area.
             </p>
           </section>
@@ -106,7 +106,7 @@ export default function AmenitiesPage() {
             <p className="mt-4">
               <strong>Centennial Hills Hospital Medical Center</strong> (6900 N Durango Dr),{' '}
               <strong>MountainView Hospital</strong> (3100 N Tenaya Way), and{' '}
-              <strong>Summerlin Hospital Medical Center</strong> (6575 Town Center Dr) provide emergency and specialty
+              <strong>Summerlin Hospital Medical Center</strong> (657 N Town Center Dr) provide emergency and specialty
               care within a typical Northwest Las Vegas drive from Lone Mountain.
             </p>
           </section>
@@ -122,10 +122,18 @@ export default function AmenitiesPage() {
           <section>
             <h2 className="text-2xl font-bold text-luxury-navy">Schools</h2>
             <p className="mt-4">
-              Clark County School District serves Lone Mountain. Nearby public schools include{' '}
-              <strong>Decker Elementary</strong> (8825 Paddle Wheel Dr), <strong>Paul Allen Elementary</strong> (8101 Oso
-              Blanca Rd), and <strong>Centennial High School</strong> (10200 W Centennial Pkwy). Always confirm
-              attendance boundaries for the exact home you are buying.
+              Clark County School District serves Lone Mountain. Which CCSD schools are assigned to Lone Mountain
+              addresses? Verify with the{' '}
+              <a
+                href="https://ccsd.net/schools/zoning/"
+                className="text-luxury-gold font-semibold hover:underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                CCSD Zoning Search
+              </a>
+              . Nearby public campuses include <strong>Dean La Mar Allen Elementary</strong> (8680 W Hammer Ln) and{' '}
+              <strong>Centennial High School</strong> (10200 W Centennial Pkwy).
             </p>
           </section>
 

@@ -44,7 +44,7 @@ export type AmenityCategory = {
   schemaType: string
 }
 
-/** Family suburban Northwest Las Vegas — schools included; standard amenity order */
+/** Northwest Las Vegas Lone Mountain area — schools included; standard amenity order */
 export const AMENITY_CATEGORIES: AmenityCategory[] = [
   { id: 'restaurants', label: 'Restaurants', primaryTypes: ['restaurant'], schemaType: 'Restaurant' },
   { id: 'cafes', label: 'Cafes', primaryTypes: ['cafe', 'coffee_shop'], schemaType: 'CafeOrCoffeeShop' },

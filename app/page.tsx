@@ -5,6 +5,7 @@ import { WhyChooseUs } from '@/components/sections/WhyChooseUs'
 import { ReviewsSection } from '@/components/sections/ReviewsSection'
 import { FAQSection } from '@/components/sections/FAQSection'
 import { loneMountainFaqs } from '@/lib/lone-mountain-faqs'
+import { assetPaths } from '@/lib/site-config'
 import { CTASection } from '@/components/sections/CTASection'
 import { NearbyAmenitiesSection } from '@/components/sections/NearbyAmenitiesSection'
 import { CalendlyWidget } from '@/components/calendly/CalendlyWidget'
@@ -16,7 +17,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
   description:
-    'Lone Mountain homes for sale. Expert Lone Mountain real estate with Dr. Jan Duffy. 30+ years Northwest Las Vegas experience. Buy or sell Lone Mountain homes. Call 702-222-1964.',
+    'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas with 30+ years of local experience. Call 702-222-1964.',
   keywords: [
     'Lone Mountain homes for sale',
     'Lone Mountain real estate',
@@ -28,8 +29,21 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
-    description: 'Lone Mountain homes for sale. Expert real estate with Dr. Jan Duffy. 30+ years experience. Buy or sell in Lone Mountain.',
+    description:
+      'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas. Call 702-222-1964.',
     url: '/',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Homes at Lone Mountain — Lone Mountain Las Vegas real estate',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [assetPaths.agentPhotoUrl],
   },
 }
 

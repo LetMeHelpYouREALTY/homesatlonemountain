@@ -1,15 +1,21 @@
-import { LONE_MOUNTAIN_COMMUNITY, embedMapUrl } from '@/lib/lone-mountain-map'
+import {
+  AMENITY_CATEGORIES,
+  LONE_MOUNTAIN_COMMUNITY,
+  embedMapUrl,
+  type AmenityCategoryId,
+} from '@/lib/lone-mountain-map'
 import { StaticAmenityList } from '@/components/maps/StaticAmenityList'
-import type { AmenityCategoryId } from '@/lib/lone-mountain-map'
 
 type AmenityMapFallbackProps = {
   activeCategory?: AmenityCategoryId
+  onCategoryChange?: (id: AmenityCategoryId) => void
   showStaticList?: boolean
   className?: string
 }
 
 export function AmenityMapFallback({
-  activeCategory,
+  activeCategory = 'grocery',
+  onCategoryChange,
   showStaticList = true,
   className = '',
 }: AmenityMapFallbackProps) {
@@ -17,6 +23,34 @@ export function AmenityMapFallback({
 
   return (
     <div className={className}>
+      {onCategoryChange && (
+        <div
+          className="flex flex-wrap gap-2 mb-4"
+          role="tablist"
+          aria-label="Filter nearby amenities by category"
+        >
+          {AMENITY_CATEGORIES.map((category) => {
+            const isActive = activeCategory === category.id
+            return (
+              <button
+                key={category.id}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                onClick={() => onCategoryChange(category.id)}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-luxury-gold focus-visible:ring-offset-2 ${
+                  isActive
+                    ? 'bg-luxury-navy text-white'
+                    : 'bg-luxury-cream text-luxury-navy hover:bg-luxury-stone/60 border border-luxury-stone'
+                }`}
+              >
+                {category.label}
+              </button>
+            )
+          })}
+        </div>
+      )}
+
       <div
         className="w-full h-[min(420px,60vh)] min-h-[320px] rounded-lg overflow-hidden border border-luxury-stone shadow-sm bg-luxury-cream"
         role="region"

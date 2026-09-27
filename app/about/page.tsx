@@ -3,7 +3,7 @@ import { Container } from '@/components/ui/Container'
 import dynamicImport from 'next/dynamic'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
-import { generateFaqSchema } from '@/lib/schema'
+import { generateBreadcrumbSchema, generateFaqSchema } from '@/lib/schema'
 import { assetPaths } from '@/lib/site-config'
 
 // Force static generation for SEO
@@ -46,15 +46,12 @@ export default function AboutPage() {
   return (
     <Container>
       <SchemaMarkup schema={generateFaqSchema(aboutFaqs)} />
-      <SchemaMarkup schema={{
-        "@context": "https://schema.org",
-        "@type": "RealEstateAgent",
-        "name": "Dr. Jan Duffy",
-        "areaServed": "Lone Mountain, Las Vegas",
-        "url": "https://www.homesatlonemountain.com/about",
-        "image": assetPaths.agentPhotoUrl,
-        "telephone": "+1-702-222-1964"
-      }} />
+      <SchemaMarkup
+        schema={generateBreadcrumbSchema([
+          { name: 'Home', url: '/' },
+          { name: 'About', url: '/about' },
+        ])}
+      />
       <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
         <div className="text-center">
           <div className="mx-auto mb-8 w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-luxury-gold shadow-xl ring-2 ring-luxury-navy/10">
