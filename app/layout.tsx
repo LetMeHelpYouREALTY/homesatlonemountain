@@ -6,7 +6,6 @@ import { CalendlyBadge } from '@/components/calendly/CalendlyBadge'
 import { Inter } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { MapsProvider } from '@/components/providers/MapsProvider'
 import { AnalyticsProvider } from '@/components/providers/AnalyticsProvider'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/schema'
@@ -94,18 +93,16 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className={`${inter.className} h-full`}>
-        <MapsProvider>
-          <AnalyticsProvider>
-            <div className="min-h-screen flex flex-col">
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-            <Analytics />
-            <SpeedInsights />
-            <CalendlyBadge />
-          </AnalyticsProvider>
-        </MapsProvider>
+        <AnalyticsProvider>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <Analytics />
+          <SpeedInsights />
+          <CalendlyBadge />
+        </AnalyticsProvider>
       </body>
     </html>
   )
