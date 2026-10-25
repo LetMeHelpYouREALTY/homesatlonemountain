@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
-import dynamicImport from 'next/dynamic'
+import { FeatureSection } from '@/components/layout/FeatureSectionClient'
 import { BlogList } from '@/components/blog/BlogList'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   }
 }
 
-const FeatureSection = dynamicImport(() => import('@/components/layout/FeatureSection').then(mod => mod.FeatureSection), { ssr: false })
 
 const blogFaqs = [
   { question: 'What does the Lone Mountain real estate blog cover?', answer: 'Our blog covers market updates, neighborhood insights, buying and selling tips, and local real estate trends for Lone Mountain and Northwest Las Vegas. Written by Dr. Jan Duffy with 30+ years of experience.' },

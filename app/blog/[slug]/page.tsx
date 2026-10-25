@@ -7,12 +7,13 @@ import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import Image from 'next/image'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage(props: BlogPostPageProps) {
+  const params = await props.params;
   const post = allPosts.find((p) => p._raw.flattenedPath === params.slug)
 
   if (!post) {
