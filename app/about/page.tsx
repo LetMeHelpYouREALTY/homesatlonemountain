@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
-import dynamicImport from 'next/dynamic'
+import { FeatureSection } from '@/components/layout/FeatureSectionClient'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { generateBreadcrumbSchema, generateFaqSchema } from '@/lib/schema'
@@ -10,7 +10,6 @@ import { assetPaths } from '@/lib/site-config'
 export const dynamic = 'force-static'
 export const revalidate = 3600
 
-const FeatureSection = dynamicImport(() => import('@/components/layout/FeatureSection').then(mod => mod.FeatureSection), { ssr: false })
 
 const aboutFaqs = [
   { question: 'Who is Dr. Jan Duffy?', answer: 'Dr. Jan Duffy is a licensed real estate professional with over 30 years of experience in Las Vegas real estate. She specializes in Lone Mountain and Northwest Las Vegas, helping buyers and sellers achieve their goals. License #S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties.' },

@@ -7,12 +7,13 @@ import { generatePropertySchema, generateBreadcrumbSchema } from '@/lib/schema'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 
 interface PropertyPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
-export default function PropertyPage({ params }: PropertyPageProps) {
+export default async function PropertyPage(props: PropertyPageProps) {
+  const params = await props.params;
   const property = allProperties.find((p) => p.url === `/properties/${params.id}`)
 
   if (!property) {

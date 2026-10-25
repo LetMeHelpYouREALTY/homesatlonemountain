@@ -4,7 +4,7 @@ import { MLSDisclaimer } from './MLSDisclaimer'
 
 // RealScout Office Listings Widget Component
 // @ts-ignore
-declare global {
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       'realscout-office-listings': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {

@@ -9,7 +9,8 @@ export function useMDXComponents(components: MDXComponents = {}): MDXComponents 
   return {
     ...components,
     img: ({ src, alt, className }: ImgProps) => {
-      if (!src) return null
+      // React 19 types allow a Blob here; MDX only ever passes a URL string.
+      if (!src || typeof src !== 'string') return null
       
       return (
         <Image

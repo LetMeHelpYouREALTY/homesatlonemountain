@@ -1,5 +1,5 @@
 import React from 'react'
-import dynamicImport from 'next/dynamic'
+import { FeatureSection } from '@/components/layout/FeatureSectionClient'
 import { Metadata } from 'next'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
@@ -36,7 +36,6 @@ export const metadata: Metadata = {
   }
 }
 
-const FeatureSection = dynamicImport(() => import('@/components/layout/FeatureSection').then(mod => mod.FeatureSection), { ssr: false })
 
 const contactFaqs = [
   { question: 'How can I contact Dr. Jan Duffy?', answer: 'Call 702-222-1964 for immediate assistance or use the contact form on this page. Dr. Jan Duffy responds promptly to all inquiries and offers free consultations for buyers and sellers.' },

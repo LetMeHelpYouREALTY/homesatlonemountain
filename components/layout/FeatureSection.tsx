@@ -2,7 +2,7 @@ import { MLSDisclaimer } from '@/components/properties/MLSDisclaimer'
 
 // Type declaration for RealScout custom element (shared with RealScoutWidget)
 // @ts-ignore
-declare global {
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       'realscout-office-listings': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {

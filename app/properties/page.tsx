@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
-import dynamicImport from 'next/dynamic'
+import { FeatureSection } from '@/components/layout/FeatureSectionClient'
 import { PropertiesList } from '@/components/properties/PropertiesList'
 import { RealScoutWidget } from '@/components/properties/RealScoutWidget'
 import { generateFaqSchema, generateBreadcrumbSchema } from '@/lib/schema'
@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Find your dream property with Dr. Jan Duffy\'s expert guidance and local knowledge. Updated daily listings. Call 702-222-1964.',
 }
 
-const FeatureSection = dynamicImport(() => import('@/components/layout/FeatureSection').then(mod => mod.FeatureSection), { ssr: false })
 
 const propertiesFaqs = [
   { question: 'How do I search for homes in Lone Mountain?', answer: 'Use our property search above to browse current MLS listings. For a personalized search based on your criteria and budget, call Dr. Jan Duffy at 702-222-1964.' },
