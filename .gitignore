@@ -166,3 +166,6 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# Local env files (never commit)
+.env.production
