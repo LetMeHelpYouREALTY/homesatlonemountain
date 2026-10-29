@@ -2,7 +2,7 @@ export const loneMountainFaqs = [
   {
     question: 'What is Lone Mountain and where is it located?',
     answer:
-      'Lone Mountain is a premier Northwest Las Vegas neighborhood known for mountain views, spacious homes, and family-friendly living. It offers easy access to Summerlin, top-rated schools, and convenient shopping and dining.',
+      'Lone Mountain is a premier Northwest Las Vegas neighborhood known for mountain views, spacious homes, and suburban living. It offers easy access to Summerlin, nearby schools, and convenient shopping and dining.',
   },
   {
     question: 'How do I find Lone Mountain homes for sale?',
