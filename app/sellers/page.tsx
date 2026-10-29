@@ -8,7 +8,7 @@ import { Phone, CheckCircle, TrendingUp } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
   title: 'Sell Your Lone Mountain Home | Lone Mountain Seller Guide | Dr. Jan Duffy',
-  description: 'Sell your Lone Mountain home with Dr. Jan Duffy. Maximize your Lone Mountain sale price. 30+ years Northwest Las Vegas experience. Free valuation. Call 702-222-1964.',
+  description: 'Sell your Lone Mountain home with Dr. Jan Duffy. Maximize your Lone Mountain sale price. 30+ years Northwest Las Vegas experience. Free valuation. Call 702-500-1955.',
   keywords: ['sell Lone Mountain home', 'Lone Mountain home seller', 'Lone Mountain real estate seller', 'sell house Lone Mountain'],
 }
 
@@ -51,7 +51,7 @@ export default function SellersPage() {
               Lone Mountain homes are in demand. Well-priced properties typically sell within 30-45 days. Dr. Jan Duffy provides accurate pricing from day one—the key to selling your Lone Mountain home fast and for top dollar.
             </p>
             <a
-              href="tel:+17022221964"
+              href="tel:+17025001955"
               className="inline-flex items-center gap-2 bg-luxury-gold text-luxury-navy px-6 py-3 rounded-lg font-bold hover:bg-luxury-gold-light transition-colors"
             >
               <Phone className="h-5 w-5" />

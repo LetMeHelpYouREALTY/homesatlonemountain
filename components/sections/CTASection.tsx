@@ -16,9 +16,9 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button asChild size="lg" className="bg-luxury-gold text-luxury-navy hover:bg-luxury-gold-light">
-              <a href="tel:+17022221964" className="flex items-center gap-2">
+              <a href="tel:+17025001955" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                Call 702-222-1964
+                Call 702-500-1955
               </a>
             </Button>
             <Button

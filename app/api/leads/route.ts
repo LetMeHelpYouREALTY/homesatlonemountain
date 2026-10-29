@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
       const errText = await response.text()
       console.error('FUB API error:', response.status, errText)
       return NextResponse.json(
-        { error: 'Unable to submit your request. Please try again or call 702-222-1964.' },
+        { error: 'Unable to submit your request. Please try again or call 702-500-1955.' },
         { status: 500 }
       )
     }
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Lead capture error:', error)
     return NextResponse.json(
-      { error: 'Something went wrong. Please try again or call 702-222-1964.' },
+      { error: 'Something went wrong. Please try again or call 702-500-1955.' },
       { status: 500 }
     )
   }

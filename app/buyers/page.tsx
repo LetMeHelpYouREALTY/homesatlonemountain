@@ -8,7 +8,7 @@ import { Phone, Search, Home, Key, CheckCircle } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
   title: 'Buy a Home in Lone Mountain | Lone Mountain Buyer Guide | Dr. Jan Duffy',
-  description: 'Buy a home in Lone Mountain, Northwest Las Vegas. Dr. Jan Duffy guides Lone Mountain buyers through every step. Free consultation. Call 702-222-1964.',
+  description: 'Buy a home in Lone Mountain, Northwest Las Vegas. Dr. Jan Duffy guides Lone Mountain buyers through every step. Free consultation. Call 702-500-1955.',
   keywords: ['buy Lone Mountain home', 'Lone Mountain home buyer', 'homes for sale Lone Mountain', 'Lone Mountain real estate buyer'],
 }
 
@@ -62,11 +62,11 @@ export default function BuyersPage() {
             ))}
           </ul>
           <a
-            href="tel:+17022221964"
+            href="tel:+17025001955"
             className="inline-flex items-center gap-2 mt-6 bg-luxury-gold text-luxury-navy px-6 py-3 rounded-lg font-bold hover:bg-luxury-gold-light transition-colors"
           >
             <Phone className="h-5 w-5" />
-            Call 702-222-1964
+            Call 702-500-1955
           </a>
         </div>
 

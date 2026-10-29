@@ -11,12 +11,12 @@ export const revalidate = 3600 // Rebuild every hour
 
 export const metadata: Metadata = {
   title: 'Lone Mountain Homes for Sale | Properties | Homes at Lone Mountain',
-  description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Find your dream property with Dr. Jan Duffy\'s expert guidance and local knowledge. Updated daily listings. Call 702-222-1964.',
+  description: 'Browse all homes for sale in Lone Mountain, Las Vegas. Find your dream property with Dr. Jan Duffy\'s expert guidance and local knowledge. Updated daily listings. Call 702-500-1955.',
 }
 
 
 const propertiesFaqs = [
-  { question: 'How do I search for homes in Lone Mountain?', answer: 'Use our property search above to browse current MLS listings. For a personalized search based on your criteria and budget, call Dr. Jan Duffy at 702-222-1964.' },
+  { question: 'How do I search for homes in Lone Mountain?', answer: 'Use our property search above to browse current MLS listings. For a personalized search based on your criteria and budget, call Dr. Jan Duffy at 702-500-1955.' },
   { question: 'Are the listings updated in real time?', answer: 'Yes. Our listings are pulled directly from the Multiple Listing Service (MLS) and are updated regularly. Contact Dr. Jan Duffy for the most current availability.' },
 ]
 
@@ -41,7 +41,7 @@ export default function PropertiesPage() {
             Discover your perfect home in the Lone Mountain area
           </p>
           <p className="text-lg text-luxury-charcoal">
-            Expert guidance from Dr. Jan Duffy | Call <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a>
+            Expert guidance from Dr. Jan Duffy | Call <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a>
           </p>
         </div>
 

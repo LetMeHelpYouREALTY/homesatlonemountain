@@ -8,8 +8,8 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.homesat
 export const CALENDLY_URL = 'https://calendly.com/drjanduffy/showing'
 
 // Contact Information
-export const PHONE_NUMBER = '702-222-1964'
-export const PHONE_TEL = 'tel:+17022221964'
+export const PHONE_NUMBER = '702-500-1955'
+export const PHONE_TEL = 'tel:+17025001955'
 export const EMAIL = 'info@homesatlonemountain.com'
 
 // RealScout Configuration

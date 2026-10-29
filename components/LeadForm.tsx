@@ -129,8 +129,8 @@ export function LeadForm() {
       {submitStatus === 'error' && (
         <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-red-800 text-sm">
           Something went wrong. Please try again or call{' '}
-          <a href="tel:+17022221964" className="font-semibold underline">
-            702-222-1964
+          <a href="tel:+17025001955" className="font-semibold underline">
+            702-500-1955
           </a>
           .
         </div>
