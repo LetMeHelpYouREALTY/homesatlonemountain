@@ -35,7 +35,7 @@ export function HeroSection() {
             <span>Lone Mountain Median</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">{agentStats.averageRating}★</span>
+            <span className="font-semibold">{agentStats.averageRating.toFixed(1)}★</span>
             <span>Average Rating</span>
           </div>
         </div>

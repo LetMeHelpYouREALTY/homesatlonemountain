@@ -48,8 +48,8 @@ export const agentStats = {
   yearsExperience: 30,
   transactionsClosed: 500,
   volumeClosed: '$127M+',
-  averageRating: 4.9,
-  reviewCount: 200,
+  averageRating: 5.0,
+  reviewCount: 50,
 };
 
 // Asset paths - match filenames in public folder (spaces OK for same-origin, encoded for URLs)

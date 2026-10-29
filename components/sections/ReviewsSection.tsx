@@ -66,8 +66,8 @@ export function ReviewsSection({
                 />
               ))}
             </div>
-            <span className="text-lg font-semibold text-luxury-navy">4.9</span>
-            <span className="text-luxury-charcoal">(200+ reviews)</span>
+            <span className="text-lg font-semibold text-luxury-navy">5.0</span>
+            <span className="text-luxury-charcoal">(50 Realtor.com reviews)</span>
           </div>
         </div>
 
