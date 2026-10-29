@@ -61,7 +61,7 @@ export default function BlogPage() {
             Stay informed about the Lone Mountain real estate market
           </p>
           <p className="text-lg text-luxury-charcoal">
-            Expert insights from Dr. Jan Duffy | <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a>
+            Expert insights from Dr. Jan Duffy | <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a>
           </p>
         </div>
 

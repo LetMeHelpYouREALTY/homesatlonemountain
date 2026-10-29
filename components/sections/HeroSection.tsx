@@ -42,10 +42,10 @@ export function HeroSection() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="tel:+17022221964"
+            href="tel:+17025001955"
             className="inline-flex items-center justify-center bg-luxury-gold text-luxury-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-luxury-gold-light transition-colors"
           >
-            Call 702-222-1964
+            Call 702-500-1955
           </a>
           <Link
             href="/properties"

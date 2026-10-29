@@ -15,7 +15,7 @@ const servicesFaq = [
   },
   {
     question: 'How do I get a home valuation for my Lone Mountain property?',
-    answer: 'Contact Dr. Jan Duffy at 702-222-1964 for a free, no-obligation home valuation. She will analyze comparable sales and current market conditions to provide an accurate estimate of your home\'s value.',
+    answer: 'Contact Dr. Jan Duffy at 702-500-1955 for a free, no-obligation home valuation. She will analyze comparable sales and current market conditions to provide an accurate estimate of your home\'s value.',
   },
   {
     question: 'What areas does Homes at Lone Mountain serve?',
@@ -25,7 +25,7 @@ const servicesFaq = [
 
 export const metadata: Metadata = {
   title: 'Real Estate Services | Lone Mountain Buyers & Sellers | Dr. Jan Duffy',
-  description: 'Expert real estate services in Lone Mountain: home valuations, buyer representation, seller representation, market analysis. Dr. Jan Duffy, 30+ years Las Vegas experience. Call 702-222-1964.',
+  description: 'Expert real estate services in Lone Mountain: home valuations, buyer representation, seller representation, market analysis. Dr. Jan Duffy, 30+ years Las Vegas experience. Call 702-500-1955.',
   openGraph: {
     title: 'Real Estate Services | Lone Mountain | Dr. Jan Duffy',
     description: 'Expert real estate services in Lone Mountain: valuations, buyer & seller representation, market analysis. 30+ years experience.',
@@ -83,7 +83,7 @@ export default function ServicesPage() {
         <div className="mt-12 p-6 bg-luxury-cream rounded-lg border border-luxury-stone">
           <p className="text-lg font-semibold text-luxury-navy">Ready to get started?</p>
           <p className="mt-2 text-luxury-charcoal">
-            Call Dr. Jan Duffy at <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a> or{' '}
+            Call Dr. Jan Duffy at <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a> or{' '}
             <Link href="/contact" className="text-luxury-gold font-semibold hover:underline">contact us online</Link>.
           </p>
           <p className="mt-2 text-sm text-luxury-charcoal">License #S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties</p>

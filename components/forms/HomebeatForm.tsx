@@ -49,7 +49,7 @@ export function HomebeatForm() {
       setError(
         submitError instanceof Error
           ? submitError.message
-          : 'Unable to start your Homebeat. Call 702-222-1964.'
+          : 'Unable to start your Homebeat. Call 702-500-1955.'
       )
     } finally {
       setIsSubmitting(false)

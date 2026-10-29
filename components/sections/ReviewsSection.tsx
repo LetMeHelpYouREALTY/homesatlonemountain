@@ -45,7 +45,7 @@ export function ReviewsSection({
   reviews = loneMountainReviews,
   title = 'Lone Mountain Client Reviews',
   subtitle = 'What clients say about buying and selling homes in Lone Mountain with Dr. Jan Duffy',
-  googleReviewsUrl = 'https://g.page/homesatlonemountain/review',
+  googleReviewsUrl = 'https://search.google.com/local/writereview?placeid=ChIJ7XLw8ta5yIARjTZPjgHJWVQ',
 }: ReviewsSectionProps) {
   return (
     <section className="py-16 md:py-24 bg-luxury-cream">

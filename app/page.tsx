@@ -16,7 +16,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
   description:
-    'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas with 30+ years of local experience. Call 702-222-1964.',
+    'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas with 30+ years of local experience. Call 702-500-1955.',
   keywords: [
     'Lone Mountain homes for sale',
     'Lone Mountain real estate',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lone Mountain Homes for Sale | Las Vegas Real Estate | Dr. Jan Duffy',
     description:
-      'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas. Call 702-222-1964.',
+      'Lone Mountain homes for sale in Las Vegas. Dr. Jan Duffy helps buyers and sellers in Northwest Las Vegas. Call 702-500-1955.',
     url: '/',
     images: [
       {
@@ -66,13 +66,13 @@ export default function Home() {
               </h2>
               <p className="text-lg text-luxury-charcoal leading-relaxed">
                 Lone Mountain is one of Northwest Las Vegas&apos;s most sought-after neighborhoods—mountain views, spacious homes, 
-                top-rated schools, and a strong sense of community. Dr. Jan Duffy has helped hundreds of families find their 
+                nearby public schools, and a strong sense of community. Dr. Jan Duffy has helped hundreds of families find their 
                 perfect Lone Mountain home.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {['Mountain views', 'Spacious single-family homes', 'Top-rated schools', 'Family-friendly community', 'Easy Summerlin access', 'Strong resale value'].map((item) => (
+              {['Mountain views', 'Spacious single-family homes', 'Nearby schools', 'Parks', 'Easy Summerlin access', 'Strong resale value'].map((item) => (
                 <div key={item} className="flex items-center gap-3 p-4 rounded-lg bg-luxury-cream">
                   <span className="text-luxury-gold text-xl">✓</span>
                   <span className="font-medium text-luxury-navy">{item}</span>
@@ -134,7 +134,7 @@ export default function Home() {
                   Ready to Find Your Mountain Retreat?
                 </h2>
                 <p className="text-lg text-luxury-charcoal leading-relaxed mb-6">
-                  Explore homes for sale in Lone Mountain and the Northwest Las Vegas area. From mountain-view estates to family-friendly neighborhoods, Dr. Jan Duffy can help you find the perfect fit.
+                  Explore homes for sale in Lone Mountain and the Northwest Las Vegas area. From mountain-view estates to neighborhoods, Dr. Jan Duffy can help you find the perfect fit.
                 </p>
                 <ul className="space-y-3 text-luxury-charcoal">
                   <li className="flex items-center gap-2">

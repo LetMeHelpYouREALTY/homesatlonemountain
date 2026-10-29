@@ -18,14 +18,14 @@ const neighborhoodFaq = [
     answer: 'Lone Mountain homes typically range from approximately $400,000 to over $2 million, depending on size, age, and amenities. Current market conditions vary; contact Dr. Jan Duffy for up-to-date pricing and trends.',
   },
   {
-    question: 'Are there good schools in the Lone Mountain area?',
+    question: 'Are there nearby public schools in the Lone Mountain area?',
     answer: 'Yes. Lone Mountain is served by Clark County School District schools. The area is near several highly rated elementary, middle, and high schools. Dr. Jan Duffy can provide specific school information for properties you\'re considering.',
   },
 ]
 
 export const metadata: Metadata = {
   title: 'Lone Mountain Neighborhood Guide | Las Vegas Real Estate',
-  description: 'Discover Lone Mountain, Northwest Las Vegas: schools, amenities, lifestyle, and homes for sale. Expert neighborhood insights from Dr. Jan Duffy. 702-222-1964.',
+  description: 'Discover Lone Mountain, Northwest Las Vegas: schools, amenities, lifestyle, and homes for sale. Expert neighborhood insights from Dr. Jan Duffy. 702-500-1955.',
   openGraph: {
     title: 'Lone Mountain Neighborhood Guide | Las Vegas',
     description: 'Discover Lone Mountain: schools, amenities, lifestyle. Expert insights from Dr. Jan Duffy.',
@@ -43,7 +43,7 @@ export default function NeighborhoodPage() {
           Lone Mountain Neighborhood Guide
         </h1>
         <p className="mt-6 text-lg text-luxury-charcoal">
-          Lone Mountain is one of Las Vegas’s most desirable Northwest neighborhoods, offering mountain views, family-friendly communities, and convenient access to shopping, dining, and recreation.
+          Lone Mountain is one of Las Vegas’s most desirable Northwest neighborhoods, offering mountain views, communities, and convenient access to shopping, dining, and recreation.
         </p>
 
         <div className="mt-16 space-y-12">
@@ -87,7 +87,7 @@ export default function NeighborhoodPage() {
         <div className="mt-12 p-6 bg-luxury-cream rounded-lg border border-luxury-stone">
           <p className="text-lg font-semibold text-luxury-navy">Explore Lone Mountain homes</p>
           <p className="mt-2 text-luxury-charcoal">
-            Dr. Jan Duffy has 30+ years of experience in Lone Mountain real estate. <Link href="/contact" className="text-luxury-gold font-semibold hover:underline">Contact her</Link> or call <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a> for a personalized consultation.
+            Dr. Jan Duffy has 30+ years of experience in Lone Mountain real estate. <Link href="/contact" className="text-luxury-gold font-semibold hover:underline">Contact her</Link> or call <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a> for a personalized consultation.
           </p>
         </div>
       </div>
