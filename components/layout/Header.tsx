@@ -43,8 +43,8 @@ export function Header() {
               <Link href="/" className="text-xl md:text-2xl font-bold text-luxury-navy hover:text-luxury-gold transition-colors">
                 Lone Mountain
               </Link>
-              <a href="tel:+17022221964" className="text-sm text-luxury-charcoal hover:text-luxury-gold transition-colors font-medium">
-                702-222-1964
+              <a href="tel:+17025001955" className="text-sm text-luxury-charcoal hover:text-luxury-gold transition-colors font-medium">
+                702-500-1955
               </a>
             </div>
             <div className="ml-8 hidden lg:flex items-center space-x-6">
@@ -88,9 +88,9 @@ export function Header() {
           </div>
           <div className="flex items-center gap-4">
             <Button asChild className="bg-luxury-gold text-luxury-navy hover:bg-luxury-gold-light hidden sm:flex">
-              <a href="tel:+17022221964" className="flex items-center gap-2">
+              <a href="tel:+17025001955" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                Call 702-222-1964
+                Call 702-500-1955
               </a>
             </Button>
             <button
@@ -130,9 +130,9 @@ export function Header() {
                 ))}
               </div>
               <Button asChild className="bg-luxury-gold text-luxury-navy mt-4">
-                <a href="tel:+17022221964" className="flex items-center justify-center gap-2 py-3">
+                <a href="tel:+17025001955" className="flex items-center justify-center gap-2 py-3">
                   <Phone className="h-4 w-4" />
-                  Call 702-222-1964
+                  Call 702-500-1955
                 </a>
               </Button>
             </div>

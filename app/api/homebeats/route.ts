@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           error:
-            'Homebeat signup is not configured yet. Call 702-222-1964 for a Lone Mountain valuation.',
+            'Homebeat signup is not configured yet. Call 702-500-1955 for a Lone Mountain valuation.',
         },
         { status: 503 }
       )
@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
         {
           error:
             result.error ||
-            'Unable to start a Homebeat for this address. Call 702-222-1964.',
+            'Unable to start a Homebeat for this address. Call 702-500-1955.',
         },
         { status: result.status >= 400 && result.status < 500 ? result.status : 502 }
       )
@@ -125,7 +125,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Homebeat signup error:', error)
     return NextResponse.json(
-      { error: 'Something went wrong. Call 702-222-1964.' },
+      { error: 'Something went wrong. Call 702-500-1955.' },
       { status: 500 }
     )
   }

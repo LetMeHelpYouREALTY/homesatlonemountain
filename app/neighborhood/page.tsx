@@ -25,7 +25,7 @@ const neighborhoodFaq = [
 
 export const metadata: Metadata = {
   title: 'Lone Mountain Neighborhood Guide | Las Vegas Real Estate',
-  description: 'Discover Lone Mountain, Northwest Las Vegas: schools, amenities, lifestyle, and homes for sale. Expert neighborhood insights from Dr. Jan Duffy. 702-222-1964.',
+  description: 'Discover Lone Mountain, Northwest Las Vegas: schools, amenities, lifestyle, and homes for sale. Expert neighborhood insights from Dr. Jan Duffy. 702-500-1955.',
   openGraph: {
     title: 'Lone Mountain Neighborhood Guide | Las Vegas',
     description: 'Discover Lone Mountain: schools, amenities, lifestyle. Expert insights from Dr. Jan Duffy.',
@@ -87,7 +87,7 @@ export default function NeighborhoodPage() {
         <div className="mt-12 p-6 bg-luxury-cream rounded-lg border border-luxury-stone">
           <p className="text-lg font-semibold text-luxury-navy">Explore Lone Mountain homes</p>
           <p className="mt-2 text-luxury-charcoal">
-            Dr. Jan Duffy has 30+ years of experience in Lone Mountain real estate. <Link href="/contact" className="text-luxury-gold font-semibold hover:underline">Contact her</Link> or call <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a> for a personalized consultation.
+            Dr. Jan Duffy has 30+ years of experience in Lone Mountain real estate. <Link href="/contact" className="text-luxury-gold font-semibold hover:underline">Contact her</Link> or call <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a> for a personalized consultation.
           </p>
         </div>
       </div>

@@ -78,7 +78,7 @@ export function ContactForm({ source = 'website', onSuccess }: ContactFormProps)
 
       {submitStatus === 'error' && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
-          Something went wrong. Please try again or call 702-222-1964.
+          Something went wrong. Please try again or call 702-500-1955.
         </div>
       )}
 

@@ -166,7 +166,7 @@ export function generateOrganizationSchema() {
       latitude: 36.2455,
       longitude: -115.2541
     },
-    telephone: '+1-702-222-1964',
+    telephone: '+1-702-500-1955',
     email: agentInfo.email,
     sameAs: socialProfiles,
     openingHoursSpecification,

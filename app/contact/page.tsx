@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
 
 const contactFaqs = [
-  { question: 'How can I contact Dr. Jan Duffy?', answer: 'Call 702-222-1964 for immediate assistance or use the contact form on this page. Dr. Jan Duffy responds promptly to all inquiries and offers free consultations for buyers and sellers.' },
+  { question: 'How can I contact Dr. Jan Duffy?', answer: 'Call 702-500-1955 for immediate assistance or use the contact form on this page. Dr. Jan Duffy responds promptly to all inquiries and offers free consultations for buyers and sellers.' },
   { question: 'What areas does Dr. Jan Duffy serve?', answer: 'Dr. Jan Duffy specializes in Lone Mountain, Northwest Las Vegas, Summerlin, and surrounding communities. She has 30+ years of experience in the greater Las Vegas area.' },
 ]
 
@@ -71,7 +71,7 @@ export default function ContactPage() {
               We're here to help you find your perfect home at Lone Mountain
             </p>
             <p className="text-lg text-luxury-charcoal">
-              Call <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a> for immediate assistance
+              Call <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a> for immediate assistance
             </p>
           </div>
 

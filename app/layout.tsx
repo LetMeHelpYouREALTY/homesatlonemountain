@@ -11,6 +11,7 @@ import { AnalyticsProvider } from '@/components/providers/AnalyticsProvider'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/schema'
 import './globals.css'
+import WidgetTracker from './widget-tracker'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -106,6 +107,7 @@ export default function RootLayout({
             <CalendlyBadge />
           </AnalyticsProvider>
         </MapsProvider>
+        <WidgetTracker />
       </body>
     </html>
   )

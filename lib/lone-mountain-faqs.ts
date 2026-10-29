@@ -7,7 +7,7 @@ export const loneMountainFaqs = [
   {
     question: 'How do I find Lone Mountain homes for sale?',
     answer:
-      'Browse our Lone Mountain listings on this site or call Dr. Jan Duffy at 702-222-1964. Our RealScout integration shows live MLS listings for Lone Mountain and Northwest Las Vegas. We provide personalized search assistance for all Lone Mountain property types.',
+      'Browse our Lone Mountain listings on this site or call Dr. Jan Duffy at 702-500-1955. Our RealScout integration shows live MLS listings for Lone Mountain and Northwest Las Vegas. We provide personalized search assistance for all Lone Mountain property types.',
   },
   {
     question: 'What are Lone Mountain home prices like?',
@@ -22,6 +22,6 @@ export const loneMountainFaqs = [
   {
     question: 'Does Dr. Jan Duffy help with Lone Mountain home valuations?',
     answer:
-      'Yes! We provide free, no-obligation home valuations for Lone Mountain properties using current market data and comparable sales. Call 702-222-1964 or use our contact form for your free Lone Mountain home valuation.',
+      'Yes! We provide free, no-obligation home valuations for Lone Mountain properties using current market data and comparable sales. Call 702-500-1955 or use our contact form for your free Lone Mountain home valuation.',
   },
 ]

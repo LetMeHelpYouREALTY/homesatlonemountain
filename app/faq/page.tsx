@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: 'How do I search for homes in Lone Mountain?',
-    answer: 'You can browse current Lone Mountain listings on this site. Our RealScout integration shows live MLS listings. For a personalized search based on your criteria, call Dr. Jan Duffy at 702-222-1964 or use our contact form.',
+    answer: 'You can browse current Lone Mountain listings on this site. Our RealScout integration shows live MLS listings. For a personalized search based on your criteria, call Dr. Jan Duffy at 702-500-1955 or use our contact form.',
   },
   {
     question: 'What is the Lone Mountain real estate market like?',
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: 'How do I get my home valued?',
-    answer: 'Contact Dr. Jan Duffy at 702-222-1964 for a free, no-obligation home valuation. She will review comparable sales and market data to give you an accurate estimate of your property\'s value.',
+    answer: 'Contact Dr. Jan Duffy at 702-500-1955 for a free, no-obligation home valuation. She will review comparable sales and market data to give you an accurate estimate of your property\'s value.',
   },
   {
     question: 'What areas does Homes at Lone Mountain serve?',
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How can I contact Dr. Jan Duffy?',
-    answer: 'Call 702-222-1964 or visit our Contact page. Dr. Jan Duffy responds promptly to all inquiries and offers free consultations for buyers and sellers.',
+    answer: 'Call 702-500-1955 or visit our Contact page. Dr. Jan Duffy responds promptly to all inquiries and offers free consultations for buyers and sellers.',
   },
 ]
 
@@ -68,7 +68,7 @@ export default function FaqPage() {
         <div className="mt-16 p-6 bg-luxury-cream rounded-lg border border-luxury-stone">
           <p className="text-lg font-semibold text-luxury-navy">Still have questions?</p>
           <p className="mt-2 text-luxury-charcoal">
-            Call Dr. Jan Duffy at <a href="tel:+17022221964" className="text-luxury-gold font-semibold hover:underline">702-222-1964</a> for a personal consultation.
+            Call Dr. Jan Duffy at <a href="tel:+17025001955" className="text-luxury-gold font-semibold hover:underline">702-500-1955</a> for a personal consultation.
           </p>
         </div>
       </div>

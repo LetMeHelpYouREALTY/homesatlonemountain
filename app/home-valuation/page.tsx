@@ -8,7 +8,7 @@ import { Phone, CheckCircle } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
   title: 'Lone Mountain Home Valuation | Free Property Value Estimate | Dr. Jan Duffy',
-  description: 'Get a free Lone Mountain home valuation. What is your Lone Mountain home worth? Dr. Jan Duffy provides accurate CMA for Northwest Las Vegas. Call 702-222-1964.',
+  description: 'Get a free Lone Mountain home valuation. What is your Lone Mountain home worth? Dr. Jan Duffy provides accurate CMA for Northwest Las Vegas. Call 702-500-1955.',
   keywords: ['Lone Mountain home valuation', 'Lone Mountain home value', 'what is my Lone Mountain home worth', 'free Lone Mountain CMA'],
 }
 
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'How long does a Lone Mountain home valuation take?',
-    answer: 'Dr. Jan typically provides a comprehensive Lone Mountain market analysis within 24-48 hours. Call 702-222-1964 to get started.',
+    answer: 'Dr. Jan typically provides a comprehensive Lone Mountain market analysis within 24-48 hours. Call 702-500-1955 to get started.',
   },
 ]
 
@@ -52,7 +52,7 @@ export default function HomeValuationPage() {
           <div className="bg-luxury-cream rounded-lg p-8">
             <h2 className="text-2xl font-bold text-luxury-navy mb-4">Get Your Free Lone Mountain Homebeat</h2>
             <p className="text-luxury-charcoal mb-6">
-              Enter your address. Cloud CMA emails a branded Lone Mountain market snapshot, then updates it on your schedule. Call 702-222-1964 if you want a full CMA instead.
+              Enter your address. Cloud CMA emails a branded Lone Mountain market snapshot, then updates it on your schedule. Call 702-500-1955 if you want a full CMA instead.
             </p>
             <div className="space-y-3 mb-8">
               {['Lone Mountain comparable sales', 'Current listing and sold activity', 'Emailed on the schedule you choose', 'No obligation'].map((item) => (
@@ -64,11 +64,11 @@ export default function HomeValuationPage() {
             </div>
             <HomebeatForm />
             <a
-              href="tel:+17022221964"
+              href="tel:+17025001955"
               className="mt-6 inline-flex items-center gap-2 text-luxury-navy font-semibold hover:text-luxury-gold"
             >
               <Phone className="h-5 w-5" />
-              Or call 702-222-1964
+              Or call 702-500-1955
             </a>
           </div>
 
