@@ -18,7 +18,7 @@ const neighborhoodFaq = [
     answer: 'Lone Mountain homes typically range from approximately $400,000 to over $2 million, depending on size, age, and amenities. Current market conditions vary; contact Dr. Jan Duffy for up-to-date pricing and trends.',
   },
   {
-    question: 'Are there good schools in the Lone Mountain area?',
+    question: 'Are there nearby public schools in the Lone Mountain area?',
     answer: 'Yes. Lone Mountain is served by Clark County School District schools. The area is near several highly rated elementary, middle, and high schools. Dr. Jan Duffy can provide specific school information for properties you\'re considering.',
   },
 ]
@@ -43,7 +43,7 @@ export default function NeighborhoodPage() {
           Lone Mountain Neighborhood Guide
         </h1>
         <p className="mt-6 text-lg text-luxury-charcoal">
-          Lone Mountain is one of Las Vegas’s most desirable Northwest neighborhoods, offering mountain views, family-friendly communities, and convenient access to shopping, dining, and recreation.
+          Lone Mountain is one of Las Vegas’s most desirable Northwest neighborhoods, offering mountain views, communities, and convenient access to shopping, dining, and recreation.
         </p>
 
         <div className="mt-16 space-y-12">

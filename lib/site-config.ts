@@ -67,8 +67,8 @@ export const assetPaths = {
 export const loneMountainHighlights = [
   'Mountain views',
   'Spacious homes',
-  'Top-rated schools',
-  'Family-friendly',
+  'Nearby public schools',
+  'Parks nearby',
   'Northwest Las Vegas',
   'Easy access to Summerlin',
 ];
