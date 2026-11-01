@@ -14,7 +14,7 @@ interface BlogPostPageProps {
 
 export default async function BlogPostPage(props: BlogPostPageProps) {
   const params = await props.params;
-  const post = allPosts.find((p) => p._raw.flattenedPath === params.slug)
+  const post = allPosts.find((p) => p.slug === params.slug)
 
   if (!post) {
     notFound()

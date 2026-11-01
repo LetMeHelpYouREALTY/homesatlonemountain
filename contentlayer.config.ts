@@ -93,7 +93,7 @@ export const Post = defineDocumentType(() => ({
     },
     url: {
       type: 'string',
-      resolve: (post) => `/blog/${post._raw.flattenedPath}`,
+      resolve: (post) => `/blog/${post._raw.sourceFileName.replace(/\.mdx$/, '')}`,
     },
     isFeatured: {
       type: 'boolean',

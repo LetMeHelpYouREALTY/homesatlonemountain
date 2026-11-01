@@ -24,6 +24,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/posts/:slug",
+      "destination": "/blog/:slug",
+      "permanent": true
+    },
+    {
       "source": "/properties/properties/:path*",
       "destination": "/properties/:path*",
       "permanent": true

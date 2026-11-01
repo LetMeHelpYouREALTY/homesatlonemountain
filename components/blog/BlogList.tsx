@@ -45,7 +45,7 @@ export function BlogList() {
         {posts.map((post) => (
           <Link
             key={post._id}
-            href={`/blog/${post._raw.flattenedPath}`}
+            href={post.url}
             className="card"
             onClick={() =>
               trackBlogPost({
