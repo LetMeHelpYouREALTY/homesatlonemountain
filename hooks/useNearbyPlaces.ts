@@ -84,8 +84,27 @@ export function useNearbyPlaces({
       }
     }
 
+    // The Maps script loads after first render; wait for it instead of
+    // calling google.maps before it exists (that threw "google is not defined").
+    let cancelled = false
+    let tries = 0
+    const start = () => {
+      if (cancelled) return
+      const g = (globalThis as { google?: typeof google }).google
+      if (g?.maps?.places) {
+        searchNearbyPlaces()
+      } else if (tries++ < 40) {
+        setTimeout(start, 250)
+      } else {
+        setLoading(false)
+      }
+    }
+
     if (location) {
-      searchNearbyPlaces()
+      start()
+    }
+    return () => {
+      cancelled = true
     }
   }, [location, radius, types])
 

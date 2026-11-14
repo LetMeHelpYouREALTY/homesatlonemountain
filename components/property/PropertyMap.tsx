@@ -18,7 +18,8 @@ const placeIcons = {
 }
 
 const propertyIcon = {
-  path: google.maps.SymbolPath.CIRCLE,
+  // 0 is google.maps.SymbolPath.CIRCLE; reading the enum here ran on the server, where the Maps script is not loaded, and crashed the page
+  path: 0 as google.maps.SymbolPath,
   fillColor: '#3A8DDE',
   fillOpacity: 1,
   strokeColor: '#ffffff',
